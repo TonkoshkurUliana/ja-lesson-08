@@ -14,12 +14,6 @@
 
 <ul class="menu" style="font-family:'Raleway', sans-serif;">Catalog of magazines
     <li class="item">
-        <a href="registration.jsp" class="menu-link">Registration</a>
-    </li>
-    <li class="item">
-        <a href="login.jsp" class="menu-link">Login</a>
-    </li>
-    <li class="item">
         <a href="bucket.jsp" class="menu-link">Bucket</a>
     </li>
     <li class="item">

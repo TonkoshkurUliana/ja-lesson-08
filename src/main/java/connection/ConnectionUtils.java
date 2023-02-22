@@ -11,19 +11,28 @@ import java.sql.SQLException;
 public class ConnectionUtils {
     private final static String USER_NAME = "ulka";
     private final static String USER_PASSWORD = "123456";
-    private final static String URL = "jdbc:mysql://localhost:3306/shop_magazines?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" ;
+    private final static String URL = "jdbc:mysql://localhost:3306/shop_magazines?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static final Logger LOGGER = Logger.getLogger(ConnectionUtils.class);
 
-    public static Connection openConnection() throws  SQLException {
-    try{
+    public static Connection openConnection() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+//    try{
+//            DOMConfigurator.configure("loggerConfig.xml");
+//            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
+//            System.out.println("Connection successfull!");
+//        }
+//        catch(Exception ex) {
+//            System.out.println("Connection failed...");
+//            LOGGER.error(ex);
+//        }
+//        return DriverManager.getConnection (URL, USER_NAME, USER_PASSWORD);
+//    }
+        try {
             DOMConfigurator.configure("loggerConfig.xml");
             Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
-            System.out.println("Connection successfull!");
-        }
-        catch(Exception ex) {
+        } catch (Exception ex) {
             System.out.println("Connection failed...");
             LOGGER.error(ex);
         }
-        return DriverManager.getConnection (URL, USER_NAME, USER_PASSWORD);
+        return DriverManager.getConnection(URL, USER_NAME, USER_PASSWORD);
     }
 }

@@ -1,6 +1,8 @@
 package servlet;
 
+import com.google.gson.Gson;
 import domain.User;
+import dto.UserLogin;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -20,22 +22,27 @@ public class LoginServlet extends HttpServlet {
 
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+
 
         User user = null;
         try {
             user = userService.getByUserEmail(email);
         } catch (SQLException e) {
-            LOGGER.error(e);
+            throw new RuntimeException(e);
         }
 
         if (user != null && user.getUserPassword().equals(password)) {
-            request.setAttribute("userEmail", email);
-            request.getRequestDispatcher("index.jsp").forward(request, response);
-        }else {
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            UserLogin userLogin = new UserLogin();
+            userLogin.destinationUrl = "cabinet.jsp";
+            userLogin.userEmail = user.getUserEmail();
+            String json = new Gson().toJson(userLogin);
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().write(json);
         }
     }
 

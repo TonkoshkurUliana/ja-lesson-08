@@ -21,22 +21,17 @@ public class RegistrationServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("registration.jsp").forward(request, response);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        String role = "user";
-        userService.create(new User(email, firstName, lastName, password, UserRole.USER.toString()));
 
-        request.setAttribute("userEmail", email);
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+        userService.create(new User(email, firstName, lastName, password, UserRole.USER.toString()));
+        response.setContentType("text/plain");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write("Success");
     }
 
 }

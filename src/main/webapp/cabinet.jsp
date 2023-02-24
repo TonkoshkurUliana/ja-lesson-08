@@ -8,7 +8,7 @@
     <title>Cabinet</title>
 </head>
 <body>
-<h1>Welcome to the cabinet  ${userEmail}  </h1>
+<jsp:include page="createProduct.jsp"></jsp:include>
 
 </body>
 </html>

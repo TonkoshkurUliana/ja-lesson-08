@@ -8,11 +8,6 @@
 <link rel="stylesheet" href="style/index.css">
 <body>
 <jsp:include page="header.jsp"></jsp:include>
-<div class="container">
-  <form action="pay" method="post">
-
-  </form>
-</div>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

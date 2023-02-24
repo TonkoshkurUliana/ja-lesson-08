@@ -1,17 +1,7 @@
-// function loginRegisterSwitch() {
-//   $('').animate({
-//     height : "toggle",
-//     opacity : "toggle"
-//   }, "slow");
-// }
 
 function showAlertAfterRegistration() {
   $('div.alert.alert-success').show();
 }
-
-// $('.message a').click(function() {
-//   loginRegisterSwitch();
-// });
 
 $('#register').bind('click',
         function() {
@@ -36,6 +26,7 @@ $('#register').bind('click',
             $.post("registration", userRegistration,
                 function(data) {
                   if (data == 'Success') {
+                      // loginRegisterSwitch();
                       showAlertAfterRegistration();
                       $(' input[type="text"],  input[type="password"], input[type="email"]').val('');
                   }

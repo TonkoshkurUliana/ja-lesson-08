@@ -57,9 +57,7 @@ footer {
     color: #fff;
     font: 2.3vw "Oswald", sans-serif
 }
-.footer-list-anchor {
-    font: 1.3em "Open Sans", sans-serif
-}
+
 .footer-social-section {
     width: 100%;
     align-items: center;
@@ -85,7 +83,7 @@ footer {
 .footer-social-connect {
     display: flex;
     align-items: center;
-    font: 3.5em "Oswald", sans-serif;
+    font: 2.5em "Oswald", sans-serif;
     color: #fff
 }
 .footer-social-small {
@@ -93,7 +91,7 @@ footer {
     padding: 0px 20px
 }
 .footer-social-overlap > a {
-    font-size: 3em
+    font-size: 2em
 }
 .footer-social-overlap > a:not(:first-child) {
     margin-left: 0.38em
@@ -108,7 +106,7 @@ footer {
     margin-right: auto
 }
 .footer-bottom-wrapper {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #fff
 }
 .footer-address {

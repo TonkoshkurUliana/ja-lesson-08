@@ -1,13 +1,12 @@
 package service.impl;
 
 import dao.MagazineDao;
-import dao.UserDao;
+
 import dao.impl.MagazineDaoImpl;
-import dao.impl.UserDaoImpl;
 import domain.Magazine;
 import org.apache.log4j.Logger;
 import service.MagazineService;
-import servlet.LoginServlet;
+
 
 import java.sql.SQLException;
 import java.util.List;
@@ -15,11 +14,23 @@ import java.util.List;
 public class MagazineServiceImpl implements MagazineService {
     private MagazineDao magazineDao;
     private static final Logger LOGGER = Logger.getLogger(MagazineServiceImpl.class);
+    private static MagazineServiceImpl magazineServiceImpl;
 
-    public MagazineServiceImpl() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-        magazineDao = new MagazineDaoImpl();
+    public MagazineServiceImpl() {
+        try {
+            magazineDao = new MagazineDaoImpl();
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
+            LOGGER.error(e);
+        }
     }
 
+    public static MagazineService getMagazineServiceImpl() {;
+        if (magazineServiceImpl == null) {
+            magazineServiceImpl = new MagazineServiceImpl();
+        }
+
+        return magazineServiceImpl;
+    }
     @Override
     public Magazine create(Magazine magazine) {
         return magazineDao.create(magazine);

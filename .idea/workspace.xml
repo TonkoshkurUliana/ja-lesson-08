@@ -9,24 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe3f3e3-3a2c-427a-bb57-488f4981df3e" name="Changes" comment="08 lesson">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/BucketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/BucketServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/Products.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bucket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/cabinet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/singleProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/cabinet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/BucketDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/BucketDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Bucket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/BucketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/serverCalls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/serverCalls.js" afterDir="false" />
+    <list default="true" id="abe3f3e3-3a2c-427a-bb57-488f4981df3e" name="Changes" comment="09 lesson">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/img/magazine.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +258,7 @@
       <workItem from="1676703795226" duration="952000" />
       <workItem from="1676704825248" duration="41000" />
       <workItem from="1676704919311" duration="337000" />
-      <workItem from="1676899248741" duration="58194000" />
+      <workItem from="1676899248741" duration="58525000" />
     </task>
     <task id="LOCAL-00001" summary="07 lesson">
       <created>1677075679234</created>
@@ -290,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677231793113</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="09 lesson">
+      <created>1677320800954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677320800955</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +301,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="07 lesson" />
     <MESSAGE value="08 lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="08 lesson" />
+    <MESSAGE value="09 lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="09 lesson" />
   </component>
 </project>

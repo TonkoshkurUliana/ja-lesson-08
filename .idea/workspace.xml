@@ -9,32 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe3f3e3-3a2c-427a-bb57-488f4981df3e" name="Changes" comment="07 lesson">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_el_jakarta_el_api_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_5_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jsp_jstl_jakarta_servlet_jsp_jstl_api_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_web_jakarta_servlet_jsp_jstl_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/Logout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/createProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/serverCalls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/createProduct.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/MagazineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/MagazineServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bucket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bucket.jsp" afterDir="false" />
+    <list default="true" id="abe3f3e3-3a2c-427a-bb57-488f4981df3e" name="Changes" comment="08 lesson">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/BucketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/BucketServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/bucket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/cabinet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/singleProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/cabinet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/BucketDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/BucketDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Bucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/BucketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/serverCalls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/serverCalls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +274,7 @@
       <workItem from="1676703795226" duration="952000" />
       <workItem from="1676704825248" duration="41000" />
       <workItem from="1676704919311" duration="337000" />
-      <workItem from="1676899248741" duration="42281000" />
+      <workItem from="1676899248741" duration="58194000" />
     </task>
     <task id="LOCAL-00001" summary="07 lesson">
       <created>1677075679234</created>
@@ -291,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677075679235</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="08 lesson">
+      <created>1677231793113</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677231793113</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +309,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="07 lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="07 lesson" />
+    <MESSAGE value="08 lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="08 lesson" />
   </component>
 </project>

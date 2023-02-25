@@ -1,13 +1,11 @@
 package service.impl;
 
 import dao.BucketDao;
-import dao.UserDao;
 import dao.impl.BucketDaoImpl;
-import dao.impl.UserDaoImpl;
 import domain.Bucket;
 import org.apache.log4j.Logger;
 import service.BucketService;
-import servlet.LoginServlet;
+
 
 import java.sql.SQLException;
 import java.util.List;
@@ -15,9 +13,22 @@ import java.util.List;
 public class BucketServiceImpl implements BucketService {
     private BucketDao bucketDao;
     private static final Logger LOGGER = Logger.getLogger(BucketServiceImpl.class);
+    private static BucketServiceImpl bucketServiceImpl ;
 
-    public BucketServiceImpl() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-        bucketDao = new BucketDaoImpl();
+
+    public BucketServiceImpl() {
+        try {
+            bucketDao = new BucketDaoImpl();
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
+            LOGGER.error(e);
+        }
+    }
+
+    public static BucketService getBucketServiceImpl() {;
+        if (bucketServiceImpl == null) {
+            bucketServiceImpl = new BucketServiceImpl();
+        }
+        return bucketServiceImpl;
     }
 
     @Override

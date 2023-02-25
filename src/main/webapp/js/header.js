@@ -1,4 +1,4 @@
-$('.product-logout').click(function() {
+$('.logout').click(function() {
 
     $.get("logout", function (data) {
         if (data !== '') {
@@ -11,4 +11,4 @@ $('.product-logout').click(function() {
             window.location = customUrl;
         }
     })
-})
+});

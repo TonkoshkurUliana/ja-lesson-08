@@ -36,6 +36,11 @@ public class LoginServlet extends HttpServlet {
         }
 
         if (user != null && user.getUserPassword().equals(password)) {
+            HttpSession session = request.getSession(true);
+            session.setAttribute("userId", user.getUserId());
+            session.setAttribute("role", user.getUserRole().toString());
+
+
             UserLogin userLogin = new UserLogin();
             userLogin.destinationUrl = "cabinet.jsp";
             userLogin.userEmail = user.getUserEmail();

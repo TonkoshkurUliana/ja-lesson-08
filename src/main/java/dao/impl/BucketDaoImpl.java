@@ -3,13 +3,13 @@ package dao.impl;
 import connection.ConnectionUtils;
 import dao.BucketDao;
 import domain.Bucket;
-import domain.User;
 import org.apache.log4j.Logger;
-import servlet.LoginServlet;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import java.util.Date;
 
 public class BucketDaoImpl implements BucketDao {
     private static String READ_ALL = "select * from bucket";
@@ -29,11 +29,18 @@ public class BucketDaoImpl implements BucketDao {
     @Override
     public Bucket create(Bucket bucket) {
         try {
+
             preparedStatement = connection.prepareStatement(CREATE, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setInt(1, bucket.getUserId());
             preparedStatement.setInt(2, bucket.getProductId());
-            preparedStatement.setDate(3, bucket.getPurchaseDate());
+
+            long millis=System.currentTimeMillis();
+            java.sql.Date date = new java.sql.Date(millis);
+
+            preparedStatement.setDate(3, date);
             preparedStatement.executeUpdate();
+            System.out.println(preparedStatement);
+
 
             ResultSet rs = preparedStatement.getGeneratedKeys();
             rs.next();
@@ -75,7 +82,7 @@ public class BucketDaoImpl implements BucketDao {
             preparedStatement = connection.prepareStatement(UPDATE_BY_ID);
             preparedStatement.setInt(1, bucket.getUserId());
             preparedStatement.setInt(2, bucket.getProductId());
-            preparedStatement.setDate(3, bucket.getPurchaseDate());
+            preparedStatement.setDate(3, (java.sql.Date) bucket.getPurchaseDate());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             LOGGER.error(e);

@@ -40,7 +40,6 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("userId", user.getUserId());
             session.setAttribute("role", user.getUserRole().toString());
 
-
             UserLogin userLogin = new UserLogin();
             userLogin.destinationUrl = "cabinet.jsp";
             userLogin.userEmail = user.getUserEmail();
@@ -48,6 +47,7 @@ public class LoginServlet extends HttpServlet {
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
             response.getWriter().write(json);
+            response.getWriter().close();
         }
     }
 

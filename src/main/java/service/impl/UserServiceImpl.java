@@ -56,6 +56,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<User> readAllId(Integer id) {
+        return null;
+    }
+
+    @Override
     public User getByUserEmail(String userEmail) throws SQLException {
         return userDao.getByUserEmail(userEmail);
     }

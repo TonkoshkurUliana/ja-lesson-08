@@ -128,6 +128,11 @@ public class UserDaoImpl implements UserDao {
         return userRecords;
     }
 
+    @Override
+    public List<User> readAllId(Integer id) {
+        return null;
+    }
+
     public User getByUserEmail(String email) {
         this.email = email;
         User user = null;

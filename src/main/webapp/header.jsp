@@ -10,8 +10,8 @@
     <div class="inner">
         <nav>
             <a class="active" href="${pageContext.request.contextPath}/cabinet.jsp">Catalog</a>
-            <a href="${pageContext.request.contextPath}/createProduct.jsp">New product</a>
-            <a href="${pageContext.request.contextPath}/bucket.jsp">Bucket</a>
+            <a class="create-product-option" href="${pageContext.request.contextPath}/createProduct.jsp">New product</a>
+            <a class="user-bucket-option" href="${pageContext.request.contextPath}/bucket.jsp">Bucket</a>
             <a class="logout" href="#">LogOut</a>
         </nav>
         <a href="https://u24.gov.ua/" class="donate-link">Donate</a>

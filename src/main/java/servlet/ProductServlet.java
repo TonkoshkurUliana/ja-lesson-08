@@ -2,7 +2,6 @@ package servlet;
 
 import com.google.gson.Gson;
 import domain.Magazine;
-import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import service.MagazineService;
@@ -12,7 +11,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "products", value = "/products")
-public class Products extends HttpServlet {
+public class ProductServlet extends HttpServlet {
     private MagazineService productService = MagazineServiceImpl.getMagazineServiceImpl();
 
     @Override
@@ -23,6 +22,7 @@ public class Products extends HttpServlet {
             response.setContentType("application/json");
             response.setCharacterEncoding("UTF-8");
             response.getWriter().write(json);
+            response.getWriter().close();
         }
     }
 

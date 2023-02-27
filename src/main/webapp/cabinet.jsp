@@ -6,7 +6,7 @@
 <head>
     <link rel="stylesheet" href="style/createProduct.css">
     <link rel="stylesheet" href="style/cabinet.css">
-    <link rel="stylesheet" href="style/bootstrap.css">
+<%--    <link rel="stylesheet" href="style/bootstrap.css">--%>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>

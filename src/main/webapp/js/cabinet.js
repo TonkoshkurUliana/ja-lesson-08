@@ -20,7 +20,7 @@ $.get("products", function(data) {
     $('#productCards').html(cardsContent);
 
 }).done(function() {
-    $.get("user-role", function(data) {
+    $.get("userRole", function(data) {
         if (data !== '') {
             userRole = data;
         }

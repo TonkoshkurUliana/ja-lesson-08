@@ -13,5 +13,6 @@ import java.util.List;
         void delete(Integer id);
 
         List<T> readAll();
+        List<T> readAllId(Integer id);
  }
 

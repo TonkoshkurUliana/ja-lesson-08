@@ -22,6 +22,7 @@ header {
     background-position: center top;
     background-size: auto 200px;
     background-repeat: repeat-x;
+    margin-bottom: 25px;
 }
 .inner {
     max-width: 1060px;

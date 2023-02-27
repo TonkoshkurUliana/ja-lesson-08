@@ -1,22 +1,19 @@
 package servlet;
 
 import domain.Magazine;
-import domain.User;
-import domain.UserRole;
+
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 import service.MagazineService;
-import service.UserService;
 import service.impl.MagazineServiceImpl;
-import service.impl.UserServiceImpl;
+
 
 import java.io.IOException;
 
 @WebServlet(name = "productController", value = "/productController")
 public class ProductController extends HttpServlet {
     private final MagazineService magazineService = MagazineServiceImpl.getMagazineServiceImpl();
-
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -39,7 +36,7 @@ public class ProductController extends HttpServlet {
         Magazine magazine = new Magazine(name, information, getValidatedPrice(price));
         magazineService.create(magazine);
 
-        response.setContentType("text/plain");
+        response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write("Success");
     }

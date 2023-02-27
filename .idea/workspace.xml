@@ -9,8 +9,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe3f3e3-3a2c-427a-bb57-488f4981df3e" name="Changes" comment="09 lesson">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/img/magazine.png" afterDir="false" />
+    <list default="true" id="abe3f3e3-3a2c-427a-bb57-488f4981df3e" name="Changes" comment="10 lesson">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dto/BucketDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/BucketFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/CabinetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/CreateProductFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/ProductFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/shared/FilterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/BucketDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/BucketDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/MagazineDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/MagazineDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/MagazineMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/MagazineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MagazineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/BucketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/MagazineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/MagazineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/BucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/BucketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/BucketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/BucketServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/Logout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/Logout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shared/AbstractCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shared/AbstractCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bucket.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bucket.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cabinet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bucket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bucket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/cabinet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/cabinet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/bucket.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/bucket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/cabinet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/cabinet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +57,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,23 +83,27 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Lsmg1YYtED8GeG8xwoJeEUQcG7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/mikit/OneDrive/Рабочий стол/Learn/Java/JavaAdvanced/ja-lesson-04-master",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41494253",
-    "settings.editor.selected.configurable": "editing.templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mikit/OneDrive/Рабочий стол/Learn/Java/JavaAdvanced/ja-lesson-04-master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41494253&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mikit\OneDrive\Рабочий стол\Learn\ja-lesson-04-master\ja-lesson-04-master" />
@@ -78,6 +120,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.0.27">
+    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <module name="ja-lesson-04-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ja-lesson-04" />
       <method v="2">
@@ -237,11 +286,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MainTest" />
       <item itemvalue="Tomcat Server.Tomcat 10.0.27" />
       <item itemvalue="Tomcat Server.index.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTest" />
         <item itemvalue="Tomcat Server.index.jsp" />
       </list>
     </recent_temporary>
@@ -258,7 +309,8 @@
       <workItem from="1676703795226" duration="952000" />
       <workItem from="1676704825248" duration="41000" />
       <workItem from="1676704919311" duration="337000" />
-      <workItem from="1676899248741" duration="58525000" />
+      <workItem from="1676899248741" duration="77486000" />
+      <workItem from="1677492554489" duration="6533000" />
     </task>
     <task id="LOCAL-00001" summary="07 lesson">
       <created>1677075679234</created>
@@ -281,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677320800955</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="09 lesson">
+      <created>1677320835520</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677320835520</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,6 +361,10 @@
     <MESSAGE value="07 lesson" />
     <MESSAGE value="08 lesson" />
     <MESSAGE value="09 lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="09 lesson" />
+    <MESSAGE value="10 lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="10 lesson" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ja_lesson_04_master$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1677440344146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

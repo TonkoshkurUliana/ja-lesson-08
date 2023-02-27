@@ -28,6 +28,7 @@ public class MagazineDaoImpl implements MagazineDao {
     @Override
     public Magazine create(Magazine magazine) {
         try {
+            System.out.println("kekeke");
             preparedStatement = connection.prepareStatement(CREATE, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, magazine.getName());
             preparedStatement.setString(2, magazine.getInformation());
@@ -113,6 +114,11 @@ public class MagazineDaoImpl implements MagazineDao {
         }
 
         return magazineRecords;
+    }
+
+    @Override
+    public List<Magazine> readAllId(Integer id) {
+        return null;
     }
 }
 

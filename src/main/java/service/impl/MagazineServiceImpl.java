@@ -10,6 +10,9 @@ import service.MagazineService;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class MagazineServiceImpl implements MagazineService {
     private MagazineDao magazineDao;
@@ -54,5 +57,15 @@ public class MagazineServiceImpl implements MagazineService {
     @Override
     public List<Magazine> readAll() {
         return magazineDao.readAll();
+    }
+
+    @Override
+    public List<Magazine> readAllId(Integer id) {
+        return null;
+    }
+
+    @Override
+    public Map<Integer, Magazine> readAllMap() {
+        return  readAll().stream().collect(Collectors.toMap(Magazine::getId, Function.identity()));
     }
 }

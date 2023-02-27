@@ -12,3 +12,17 @@ $('.logout').click(function() {
         }
     })
 });
+
+$(document).ready(function() {
+    $.get("userRole", function(data) {
+        if (data !== '') {
+            userRole = data;
+        }
+    }).done(function() {
+        if (userRole === 'ADMIN') {
+            $('a.user-bucket-option').hide();
+        } else {
+            $('a.create-product-option').hide();
+        }
+    });
+});

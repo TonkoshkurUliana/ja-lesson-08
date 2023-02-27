@@ -12,11 +12,13 @@ import java.util.List;
 import java.util.Date;
 
 public class BucketDaoImpl implements BucketDao {
-    private static String READ_ALL = "select * from bucket";
+    private  static String READ_BY_ALL 			= "SELECT * FROM bucket";
+    private  static String READ_BY_ALLID 		= "SELECT * FROM bucket WHERE userId=?";
     private static String CREATE = "insert into bucket(`userId`,`magazineId`, `purchaseDate`) values (?,?,?)";
     private static String READ_BY_ID = "select * from bucket where id =?";
     private static String UPDATE_BY_ID = "update bucket set userId=?, magazineId = ?, purchaseDate = ?";
     private static String DELETE_BY_ID = "delete from bucket where id=?";
+
 
     private Connection connection;
     private PreparedStatement preparedStatement;
@@ -107,7 +109,7 @@ public class BucketDaoImpl implements BucketDao {
     public List<Bucket> readAll() {
         List<Bucket> bucketRecords = new ArrayList<>();
         try {
-            preparedStatement = connection.prepareStatement(READ_ALL);
+            preparedStatement = connection.prepareStatement(READ_BY_ALL);
             ResultSet result = preparedStatement.executeQuery();
             while (result.next()) {
                 Integer idBucket = result.getInt("id");
@@ -123,4 +125,27 @@ public class BucketDaoImpl implements BucketDao {
 
         return bucketRecords;
     }
+
+    @Override
+    public List<Bucket> readAllId(Integer id) {
+        List<Bucket> bucketRecords = new ArrayList<>();
+        try {
+            preparedStatement = connection.prepareStatement(READ_BY_ALLID);
+            preparedStatement.setInt(1, id);
+            ResultSet result = preparedStatement.executeQuery();
+            while (result.next()) {
+                Integer idBucket = result.getInt("id");
+                Integer userId = result.getInt("userId");
+                Integer productId = result.getInt("magazineId");
+                Date purchaseDate = result.getDate("purchaseDate");
+
+                bucketRecords.add(new Bucket(idBucket, userId, productId, purchaseDate));
+            }
+        } catch (SQLException e) {
+            LOGGER.error(e);
+        }
+
+        return bucketRecords;
+    }
+
 }

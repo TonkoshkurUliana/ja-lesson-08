@@ -36,7 +36,7 @@ public class ProductController extends HttpServlet {
         Magazine magazine = new Magazine(name, information, getValidatedPrice(price));
         magazineService.create(magazine);
 
-        response.setContentType("text/html");
+        response.setContentType("text/plain");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write("Success");
     }
